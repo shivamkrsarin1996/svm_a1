@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <header>
+            <div class="myDiv">
+                <h1> File Uploading and Retrieval system</h1>
+            </div>
+        </header>
+
+
+         <br><br>
+       <p>
+        <h3> Retrieve user's image </h3>
+         <form action="/getUserImg" method="get">
+          Enter Name: <input type="text" name="userName" maxlength="200" width="60"> <input type="submit" value="Retrive Picture">
+        </form>
+    </p>
+<br><br>
+        <p>
+        <h3> Search for image for users with salary<9000</h3>
+         <form action="/remove" method="get">
+           Name: <input type="text" name="user_img_for_sal" maxlength="200" width="60"> <input type="submit" value="Search">
+        </form>
+    </p>
+        <br><br>
+    <p>
+        <h3> Add a picture for a user</h3>
+         <form action="/addPicforUser" method="post" enctype="multipart/form-data">
+            User Name: <input type="text" name="userName" maxlength="200" width="60"><br>
+            Select Image: <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+             <input type="submit" value="Add Picture">
+        </form>
+    </p>
+        <br><br>
+    <p>
+        <h3> Remove a user</h3>
+         <form action="/removeUser" method="get">
+           Name: <input type="text" name="user_to_remove" maxlength="200" width="60">  <input type="submit" value="Remove a user">
+        </form>
+    </p>
+<br><br>
+   <p>
+        <h3>Change keyword for a user</h3>
+         <form action="/updateKeyword" method="get">
+           Name: <input type="text" name="userName" maxlength="200" width="60"> </br>
+           Change keyword to: <input type="text" name="keyword_to_change" maxlength="200" width="60"> </br>
+           <input type="submit" value="Update Keyword">
+        </form>
+    </p>
+    <br><br>
+    <p>
+        <h3>Change salary for a user</h3>
+         <form action="/updateSalary" method="get">
+           Name: <input type="text" name="userName" maxlength="200" width="60"> </br>
+           Enter Salary: <input type="text" name="new_sal" maxlength="200" width="60"> </br>
+           <input type="submit" value="Change Salary">
+        </form>
+    </p>
+       <br><br><br>
+        <div class="pagefooter">
+            <footer>
+                <b>   By: Shivam Kumar Sareen - 1001751987</b>
+            </footer>
+
+            </div>
+
+    </body>
+</html>
